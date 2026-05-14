@@ -1,7 +1,10 @@
 :root {
-  --primary: #0a4d3c; /* Deep trusted green */
-  --secondary: #e0eee8; /* Soft mint/white */
-  --accent: #d4af37; /* Gold accent for premium feel */
+  --primary: #0a4d3c;
+  /* Deep trusted green */
+  --secondary: #e0eee8;
+  /* Soft mint/white */
+  --accent: #d4af37;
+  /* Gold accent for premium feel */
   --text-main: #1a2a24;
   --text-light: #526b60;
   --bg-gradient: linear-gradient(135deg, #f5fbf8 0%, #e8f4ec 100%);
@@ -138,7 +141,7 @@ input[type="email"] {
   font-size: 1rem;
   outline: none;
   transition: all 0.3s ease;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 input[type="email"]:focus {
@@ -180,7 +183,7 @@ input[type="email"]:focus {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   z-index: 1;
   transition: left 0.5s ease;
 }
@@ -220,12 +223,29 @@ footer {
   animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.delays-1 { animation-delay: 0.1s; }
-.delays-2 { animation-delay: 0.2s; }
-.delays-3 { animation-delay: 0.3s; }
-.delays-4 { animation-delay: 0.4s; }
-.delays-5 { animation-delay: 0.5s; }
-.delays-6 { animation-delay: 0.6s; }
+.delays-1 {
+  animation-delay: 0.1s;
+}
+
+.delays-2 {
+  animation-delay: 0.2s;
+}
+
+.delays-3 {
+  animation-delay: 0.3s;
+}
+
+.delays-4 {
+  animation-delay: 0.4s;
+}
+
+.delays-5 {
+  animation-delay: 0.5s;
+}
+
+.delays-6 {
+  animation-delay: 0.6s;
+}
 
 @keyframes fadeUp {
   to {
@@ -241,11 +261,26 @@ footer {
     height: auto;
     border-radius: 16px;
   }
-  h1 { font-size: 3rem; }
-  .mission { font-size: 1.05rem; }
-  #notify-form { flex-direction: column; }
-  .btn { width: 100%; }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .mission {
+    font-size: 1.05rem;
+  }
+
+  #notify-form {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
+
 @media (max-width: 480px) {
-  h1 { font-size: 2.5rem; }
+  h1 {
+    font-size: 2.5rem;
+  }
 }

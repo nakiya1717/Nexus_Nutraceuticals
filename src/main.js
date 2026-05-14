@@ -27,7 +27,7 @@ function initParticles() {
   const canvas = document.getElementById('particles');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  
+
   let width, height;
   let particles = [];
   let ripples = [];
@@ -46,7 +46,7 @@ function initParticles() {
     width = canvas.width = window.innerWidth;
     height = canvas.height = window.innerHeight;
   };
-  
+
   window.addEventListener('resize', resize);
   resize();
 
@@ -56,7 +56,7 @@ function initParticles() {
     mouse.x = e.clientX;
     mouse.y = e.clientY;
   });
-  
+
   window.addEventListener('mouseout', () => {
     mouse.x = null;
     mouse.y = null;
@@ -65,7 +65,7 @@ function initParticles() {
   window.addEventListener('click', (e) => {
     let x = e.clientX;
     let y = e.clientY;
-    
+
     // Create an expanding ripple effect
     ripples.push({
       x: x,
@@ -74,7 +74,7 @@ function initParticles() {
       opacity: 1,
       color: colors[Math.floor(Math.random() * colors.length)]
     });
-    
+
     // Create explosion of mini particles
     for (let i = 0; i < 15; i++) {
       particles.push(new Particle(x, y, true));
@@ -85,22 +85,22 @@ function initParticles() {
     constructor(x, y, isExplosion = false) {
       this.x = x !== undefined ? x : Math.random() * width;
       this.y = y !== undefined ? y : Math.random() * height;
-      
+
       // Sizes from reference image are mixed. Some large strokes, some small dots.
       this.baseSize = isExplosion ? (Math.random() * 4 + 2) : (Math.random() * 20 + 5);
       this.size = this.baseSize;
-      
+
       this.speedX = (Math.random() - 0.5) * (isExplosion ? 10 : 1.5);
       this.speedY = (Math.random() - 0.5) * (isExplosion ? 10 : 1.5);
-      
+
       this.color = colors[Math.floor(Math.random() * colors.length)];
       // Randomly choose stroke or filled
       this.isStroked = Math.random() > 0.5;
-      
+
       this.isExplosion = isExplosion;
       this.life = isExplosion ? 100 : Infinity;
     }
-    
+
     update() {
       // Gentle dodge effect on mouse move
       if (mouse.x != null && mouse.y != null && !this.isExplosion) {
@@ -128,18 +128,18 @@ function initParticles() {
         this.speedY *= 0.95;
       }
     }
-    
+
     draw() {
       let alpha = this.isExplosion ? Math.max(0, this.life / 100) : 0.6;
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
       if (this.isStroked && !this.isExplosion) {
-         ctx.lineWidth = 3;
-         ctx.strokeStyle = `rgba(${this.color}, ${alpha + 0.2})`; // Slightly more visible stroke
-         ctx.stroke();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = `rgba(${this.color}, ${alpha + 0.2})`; // Slightly more visible stroke
+        ctx.stroke();
       } else {
-         ctx.fillStyle = `rgba(${this.color}, ${alpha})`;
-         ctx.fill();
+        ctx.fillStyle = `rgba(${this.color}, ${alpha})`;
+        ctx.fill();
       }
     }
   }
@@ -151,7 +151,7 @@ function initParticles() {
 
   function animate() {
     ctx.clearRect(0, 0, width, height);
-    
+
     // Update and draw ripples
     for (let i = ripples.length - 1; i >= 0; i--) {
       let r = ripples[i];
@@ -179,6 +179,6 @@ function initParticles() {
     }
     requestAnimationFrame(animate);
   }
-  
+
   animate();
 }
