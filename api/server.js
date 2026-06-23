@@ -12,7 +12,11 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'nexus_super_secret_key_12345';
-const DATA_DIR = path.join(__dirname, 'data');
+
+// Use /tmp for data persistence on Vercel (read-only filesystem bypass)
+const DATA_DIR = process.env.VERCEL
+  ? '/tmp'
+  : path.join(__dirname, '..', 'data');
 const USERS_FILE = path.join(DATA_DIR, 'users.json');
 const ORDERS_FILE = path.join(DATA_DIR, 'orders.json');
 
@@ -199,6 +203,11 @@ app.get('/api/orders/user/:userId', (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`[Nexus Auth Server] Running on http://localhost:${PORT}`);
-});
+// Run local listener only when not running on Vercel
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`[Nexus Auth Server] Running on http://localhost:${PORT}`);
+  });
+}
+
+export default app;
