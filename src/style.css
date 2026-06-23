@@ -286,9 +286,7 @@ p {
 
 .minimal-header.scrolled {
   padding: 1rem 0;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: var(--bg-white);
   border-bottom: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
 }
