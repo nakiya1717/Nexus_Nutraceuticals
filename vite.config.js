@@ -8,5 +8,15 @@ export default defineConfig({
         changeOrigin: true
       }
     }
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        benefits: './benefits.html',
+        blog: './blog.html',
+        article: './article.html'
+      }
+    }
   }
 });

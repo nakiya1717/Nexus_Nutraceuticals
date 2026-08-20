@@ -154,7 +154,32 @@ app.post('/api/auth/login', async (req, res) => {
   }
 });
 
-// 3. Create/Save Order Route
+// 3. Send OTP Route (Fast2SMS)
+app.post('/api/auth/send-otp', async (req, res) => {
+  try {
+    const { mobile } = req.body;
+    if (!mobile) return res.status(400).json({ error: 'Mobile number is required' });
+
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    console.log(`[SECURE OTP] Generated for +91 ${mobile}: ${otp}`);
+
+    // Fast2SMS API call (Mocked for safety, or you can add real fetch here)
+    const fast2smsResponse = {
+      return: true,
+      request_id: 'MOCK_REQ_ID_' + Date.now(),
+      message: [ 'SMS sent successfully.' ]
+    };
+    
+    console.log(`[FAST2SMS] Response:`, fast2smsResponse);
+
+    res.json({ success: true, message: 'OTP sent successfully' });
+  } catch (error) {
+    console.error('OTP Error:', error);
+    res.status(500).json({ error: 'Failed to send OTP' });
+  }
+});
+
+// 4. Create/Save Order Route
 app.post('/api/orders', (req, res) => {
   try {
     const { userId, userEmail, name, phone, pincode, address, paymentMethod, items, total, paymentDetails } = req.body;

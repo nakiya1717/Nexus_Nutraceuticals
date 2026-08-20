@@ -11,6 +11,7 @@
   <meta name="description" content="Premium, high-purity Water-Soluble Vitamin B12 Powder (≥99.0% HPLC Purity) for instant energy, neurological support, and maximum absorption. Order directly online." />
   <meta name="keywords" content="Vitamin B12 Powder, Water Soluble B12, Cyanocobalamin, Buy B12 Raw Material, Nexus Nutraceuticals" />
   <meta name="author" content="Nexus Nutraceuticals" />
+  <link rel="canonical" href="https://www.nexusnutraceutical.com/" />
 
   <!-- Google Fonts: Montserrat (Heading) and Inter (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +37,7 @@
   <canvas id="particles"></canvas>
 
   <!-- Sticky Header -->
-  <header class="minimal-header">
+  <header class="minimal-header blog-sticky-header">
     <div class="header-container">
       <a href="#home" class="logo">
         <img src="/logo-mark.png" alt="Nexus Nutraceuticals Logo" class="logo-img" />
@@ -49,30 +50,15 @@
       <!-- Navigation Links -->
       <nav class="minimal-nav">
         <ul>
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="/benefits.html" class="nav-link">Benefits</a></li>
           <li><a href="#shop" class="nav-link">Shop</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="/blog.html" class="nav-link">Blog</a></li>
         </ul>
       </nav>
 
-      <!-- Cart Trigger & Auth Actions -->
-      <div class="nav-actions">
-        <button class="nav-cart-btn" id="nav-cart-trigger" aria-label="Open Shopping Cart">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-          <span class="cart-badge" id="cart-badge-count">0</span>
-        </button>
-        
-        <!-- Auth Profile State -->
-        <div class="auth-header-state" id="auth-header-state">
-          <button class="nav-auth-btn" id="nav-auth-trigger" aria-label="Sign In">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <span class="auth-btn-label">Login</span>
-          </button>
-        </div>
-      </div>
     </div>
   </header>
 
@@ -86,122 +72,51 @@
 
       <div class="container hero-container">
         <div class="hero-content">
-          <span class="hero-badge">100% Pure Active Raw Crystalline Powder</span>
-          <h1 class="hero-title">Water Soluble <br><span class="text-gradient">Vitamin B12</span></h1>
-          <p class="hero-tagline-text">Better health starts here</p>
+          <span class="hero-badge">Premium Water-Soluble Formula</span>
+          <h1 class="hero-title">Vitamin B12 + D3<br><span class="text-gradient">Powder</span></h1>
+          <p class="hero-tagline-text">A Proprietary Dietary Supplement</p>
           <p class="hero-desc">
-            Experience the purity of ultra-bioavailable Cyanocobalamin crystalline powder. Engineered for rapid dissolve, instant cellular absorption, and clean daily energy support. Zero binders, zero fillers, zero compromises.
+            Nexus Nutraceuticals Vitamin B12 + D3 Powder is formulated to support your daily wellness. Our proprietary water-soluble formula is 100% vegetarian and contains zero sugar.
           </p>
           <div class="hero-ctas">
-            <a href="#shop" class="btn btn-primary btn-hero-cta">Order B12 Powder</a>
-            <a href="#benefits" class="btn-secondary-link">
-              <span>Explore Benefits</span>
+            <a href="#shop" class="btn btn-primary btn-hero-cta">Order Now</a>
+            <a href="/benefits.html" class="btn-secondary-link">
+              <span>Product Features</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
         </div>
-        <div class="hero-image-wrapper">
+        <div class="hero-image-wrapper dual-jars">
           <div class="hero-tech-ring"></div>
           <div class="hero-glow-aura"></div>
-          <img src="/b12-jar.jpg" alt="Nexus Vitamin B12 Powder 100gm Jar" class="hero-product-img" />
-          <!-- Floating Glass Cards -->
-          <div class="floating-glass-card card-top-right">
-            <span class="glass-number">99.0%+</span>
-            <span class="glass-label">HPLC Purity</span>
-          </div>
-          <div class="floating-glass-card card-bottom-left">
-            <span class="glass-number">Instant</span>
-            <span class="glass-label">Cellular Bioavailability</span>
+          
+          <div class="hero-jar-container">
+            <div class="jar-wrapper strawberry-wrapper">
+              <span class="jar-flavor-label">Strawberry</span>
+              <img src="/b12-strawberry.jpg" alt="Strawberry Flavour Jar" class="hero-product-img" />
+            </div>
+            <div class="jar-wrapper orange-wrapper">
+              <span class="jar-flavor-label">Orange</span>
+              <img src="/b12-orange.jpg" alt="Orange Flavour Jar" class="hero-product-img" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 2. Key Benefits Section -->
-    <section class="benefits-section" id="benefits">
+    <!-- 2. Benefits Teaser Section -->
+    <section class="benefits-teaser-section" style="padding: 6rem 0; background: var(--bg-white); text-align: center;">
       <div class="container">
         <div class="section-header-centered">
-          <span class="section-sub">Nutraceutical Excellence</span>
-          <h2 class="section-title">Formulated for Core Vitality</h2>
-          <p class="section-desc-lead">Our raw crystalline formula targets three primary pillars of wellness to elevate your daily human performance.</p>
-        </div>
-        
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <div class="benefit-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <h3>Energy Support</h3>
-            <p>Fuels cellular ATP production pathways to sustain clean, jitter-free energy and reduce fatigue throughout the day.</p>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8a4 4 0 1 0 0 8"/></svg>
-            </div>
-            <h3>Nervous System Support</h3>
-            <p>Essential for myelin sheath synthesis to protect nerve tissues, promote cognitive focus, and support neural transmission.</p>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Immunity & Vitality</h3>
-            <p>Enhances cellular defense mechanisms, aids healthy red blood cell production, and drives optimal metabolic balance.</p>
-          </div>
+          <span class="section-sub">Nexus Nutraceuticals</span>
+          <h2 class="section-title">Discover the Benefits</h2>
+          <p class="section-desc-lead" style="max-width: 600px; margin: 0 auto 2rem;">Our Vitamin B12 + D3 powder is formulated to support energy metabolism, nerve health, and immunity. 100% Vegetarian and Zero Sugar.</p>
+          <a href="/benefits.html" class="btn btn-outline" style="border-width: 2px;">Explore All Benefits</a>
         </div>
       </div>
     </section>
 
-    <!-- 3. Absorption Comparison Section -->
-    <section class="absorption-section">
-      <div class="container absorption-container">
-        <div class="absorption-text-col">
-          <span class="section-sub">Maximum Absorption</span>
-          <h2>Why Water-Soluble Powder?</h2>
-          <p class="absorption-p">
-            Traditional Vitamin B12 tablets are bound with silica, magnesium stearate, and other hard-to-digest binders. They must pass through the gastrointestinal tract, where much of the active vitamin is degraded.
-          </p>
-          <p class="absorption-p">
-            Our crystalline powder dissolves instantly in water, offering immediate sublingual and mucosal absorption. It bypasses complex digestive roadblocks, delivering active Cyanocobalamin directly into your bloodstream.
-          </p>
-          
-          <div class="comparison-stats">
-            <div class="stat-box">
-              <span class="stat-num">5X</span>
-              <span class="stat-text">Faster Dissolve Time</span>
-            </div>
-            <div class="stat-box">
-              <span class="stat-num">100%</span>
-              <span class="stat-text">Active Crystalline Purity</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="absorption-visual-col">
-          <div class="glass-comparison-card">
-            <div class="comp-row">
-              <div class="comp-label">Nexus Powder</div>
-              <div class="comp-bar-container">
-                <div class="comp-bar-wrapper">
-                  <div class="comp-bar primary-bar" style="width: 100%;"></div>
-                </div>
-                <span class="comp-percent">100% Absorbed</span>
-              </div>
-            </div>
-            <div class="comp-row">
-              <div class="comp-label">Standard Tablets</div>
-              <div class="comp-bar-container">
-                <div class="comp-bar-wrapper">
-                  <div class="comp-bar tablet-bar" style="width: 18%;"></div>
-                </div>
-                <span class="comp-percent">18% Absorbed</span>
-              </div>
-            </div>
-            <p class="comp-note">*Source: HPLC dissolution studies comparing raw crystalline Cyanocobalamin with standard tablet compressions.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- 4. Product Selection & Pricing Section -->
     <section class="shop-section" id="shop">
@@ -213,128 +128,137 @@
         </div>
         
         <div class="pricing-grid single-product-layout">
-          <!-- Card 1: 100g -->
-          <div class="pricing-card">
-            <div class="veg-badge-indicator" aria-label="Vegetarian Product">
-              <div class="veg-dot"></div>
-            </div>
+          <!-- Card 1: Main Product Box -->
+          <div class="pricing-card premium-shop-card">
+            <div class="premium-card-glow"></div>
+            
             <div class="pricing-card-header">
-              <span class="pkg-tag">Popular Choice</span>
-              <h3>100g Daily Jar</h3>
-              <div class="rating-stars">★★★★★ <span class="rating-count">(112 reviews)</span></div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <div class="veg-badge-indicator" aria-label="Vegetarian Product" style="position: static; margin: 0;">
+                  <div class="veg-dot"></div>
+                </div>
+                <span class="pkg-tag" style="margin: 0;">Premium Health Supplement</span>
+              </div>
+              <h3>Vitamin B12 + D3 Powder</h3>
             </div>
+            
             <div class="pricing-image-box">
-              <img src="/b12-jar.jpg" alt="Nexus Vitamin B12 100g" class="pricing-product-thumb" />
+              <img src="/b12-strawberry.jpg" id="shop-img" alt="Nexus Vitamin B12 Strawberry" class="pricing-product-thumb" />
             </div>
-            <ul class="pricing-details">
-              <li>Ideal for daily individual use</li>
-              <li>Preserves crystalline freshness</li>
-              <li>Easy measuring scoop included</li>
-            </ul>
-            <div class="pricing-price-row">
-              <span class="price-retail">₹799</span>
-              <span class="price-deal">₹499</span>
-              <span class="price-save">Save 37%</span>
+
+            <!-- Flavour Selection -->
+            <div class="pdp-flavour-selector">
+              <p class="selector-label">Select Flavour:</p>
+              <div class="flavour-options premium-flavour">
+                <label class="flavour-btn">
+                  <input type="radio" name="b12-flavour" value="Strawberry" checked />
+                  <span class="flavour-text">🍓 Strawberry</span>
+                </label>
+                <label class="flavour-btn">
+                  <input type="radio" name="b12-flavour" value="Orange" />
+                  <span class="flavour-text">🍊 Orange</span>
+                </label>
+              </div>
             </div>
-            <button class="btn btn-primary quick-add-btn btn-block" data-size="b12-100g">Add to Cart</button>
+
+            <!-- Offer Selection -->
+            <div class="pdp-size-selector">
+              <p class="selector-label">Select Offer:</p>
+              <div class="size-options premium-offers">
+                <label class="premium-offer-radio">
+                  <input type="radio" name="b12-offer" value="1" checked onchange="updateOfferPrice(359, 399, '10% OFF', 40, 'b12-offer-1')" />
+                  <div class="offer-content">
+                    <span class="offer-name">Buy 1 Pack</span>
+                    <span class="offer-badge">10% OFF</span>
+                  </div>
+                  <span class="offer-price">₹359</span>
+                </label>
+                
+                <label class="premium-offer-radio">
+                  <input type="radio" name="b12-offer" value="2" onchange="updateOfferPrice(678, 798, '15% OFF', 120, 'b12-offer-2')" />
+                  <div class="offer-content">
+                    <span class="offer-name">Buy 2 Packs</span>
+                    <span class="offer-badge highlight-badge">15% OFF</span>
+                  </div>
+                  <span class="offer-price">₹678</span>
+                </label>
+                
+                <label class="premium-offer-radio best-value">
+                  <div class="best-value-ribbon">Most Popular</div>
+                  <input type="radio" name="b12-offer" value="3" onchange="updateOfferPrice(999, 1197, 'Special', 198, 'b12-offer-3')" />
+                  <div class="offer-content">
+                    <span class="offer-name">Buy 3 Packs</span>
+                    <span class="offer-badge special-badge">Special</span>
+                  </div>
+                  <span class="offer-price">₹999</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Price Display -->
+            <div class="pricing-price-row premium-price-row">
+              <span class="price-deal" id="pdp-sale">₹359</span>
+              <span class="price-retail" id="pdp-original">₹399</span>
+              <span class="price-save" id="pdp-discount">10% OFF</span>
+            </div>
+            
+            <button class="btn btn-primary btn-block premium-add-btn" id="pdp-whatsapp-btn" style="background-color: #25D366; color: #ffffff; border-color: #25D366;">
+              Order on WhatsApp
+            </button>
+            <p class="tax-note">Inclusive of all taxes. You save <span id="pdp-save-amt">₹40</span>.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 5. Commitments & Quality Standard Section -->
-    <section class="commitments-section" id="commitments">
+    <!-- 5. Nutritional Information & Usage -->
+    <section class="commitments-section" id="nutrition">
       <div class="container">
         <div class="section-header-centered">
-          <span class="section-sub">Nexus Commitments</span>
-          <h2>Zero Compromise on Quality</h2>
-          <p class="section-desc-lead">Our raw crystalline Cyanocobalamin is standardized to the highest global benchmarks to deliver pure daily vitality.</p>
+          <span class="section-sub">Product Details</span>
+          <h2>Nutritional Information & Usage</h2>
+          <p class="section-desc-lead">A Proprietary Dietary Supplement. Not for medicinal use.</p>
         </div>
         
-        <div class="commitments-grid">
-          <!-- Card 1: No Additives -->
-          <div class="commitment-card">
-            <div class="commitment-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3>No Additives</h3>
-            <p>Nothing extra added, only nature’s best formulations.</p>
+        <div class="commitments-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <!-- Nutritional Facts -->
+          <div class="commitment-card" style="text-align: left; align-items: flex-start; padding: 2rem;">
+            <h3 style="margin-bottom: 1rem; border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">Nutrition Facts</h3>
+            <p style="margin: 0; font-weight: 600;">Serving Size: 5g</p>
+            <p style="margin: 0 0 1rem 0; font-weight: 600;">Serving Per Container: 20</p>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 1rem;">
+              <tr style="border-bottom: 1px solid #e2e8f0;"><th style="text-align: left; padding: 0.5rem 0;">Nutritional Information (Approx.)</th><th style="text-align: right; padding: 0.5rem 0;">Per Serving (5g)</th><th style="text-align: right; padding: 0.5rem 0;">%RDA</th></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Energy</td><td style="text-align: right; padding: 0.5rem 0;">9.2 kcal</td><td style="text-align: right; padding: 0.5rem 0;">0.46%</td></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Protein</td><td style="text-align: right; padding: 0.5rem 0;">0.1 g</td><td style="text-align: right; padding: 0.5rem 0;">0.19%</td></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Carbohydrate</td><td style="text-align: right; padding: 0.5rem 0;">2.2 g</td><td style="text-align: right; padding: 0.5rem 0;">**</td></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Total Fat</td><td style="text-align: right; padding: 0.5rem 0;">0.0 g</td><td style="text-align: right; padding: 0.5rem 0;">0.00%</td></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Sugar</td><td style="text-align: right; padding: 0.5rem 0;">0.0 g</td><td style="text-align: right; padding: 0.5rem 0;">**</td></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Sodium</td><td style="text-align: right; padding: 0.5rem 0;">212 mg</td><td style="text-align: right; padding: 0.5rem 0;">10.60%</td></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Vitamin B12</td><td style="text-align: right; padding: 0.5rem 0;">2.2 mcg</td><td style="text-align: right; padding: 0.5rem 0;">100%</td></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Vitamin D3</td><td style="text-align: right; padding: 0.5rem 0;">400 IU</td><td style="text-align: right; padding: 0.5rem 0;">100%</td></tr>
+              <tr style="border-bottom: 1px solid #f1f5f9;"><td style="padding: 0.5rem 0;">Vitamin K2 (MK-7)</td><td style="text-align: right; padding: 0.5rem 0;">55 mcg</td><td style="text-align: right; padding: 0.5rem 0;">100%</td></tr>
+            </table>
+            <p style="font-size: 0.85rem; color: #64748b; margin: 0;">*%RDA Values are based on ICMR Guidelines 2020 for men engaged in moderate work.</p>
+            <p style="font-size: 0.85rem; color: #64748b; margin: 0;">**%RDA not established.</p>
           </div>
 
-          <!-- Card 2: No Artificial Colors -->
-          <div class="commitment-card">
-            <div class="commitment-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          <!-- Usage, Ingredients, Storage -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div class="commitment-card" style="text-align: left; align-items: flex-start; padding: 2rem;">
+              <h3 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Recommended Usage</h3>
+              <p>Mix one scoop (5 g) with 200 ml of water. Consume once or twice daily or as directed by your healthcare professional.</p>
             </div>
-            <h3>No Artificial Colors</h3>
-            <p>Nothing artificial, only nature in its purest active form.</p>
-          </div>
+            
+            <div class="commitment-card" style="text-align: left; align-items: flex-start; padding: 2rem;">
+              <h3 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Ingredients</h3>
+              <p>Maltodextrin, Citric Acid (INS 330), Flavour (Strawberry / Orange), Sucralose, Mannitol, Dextrose.</p>
+            </div>
 
-          <!-- Card 3: No Preservatives -->
-          <div class="commitment-card">
-            <div class="commitment-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3>No Preservatives</h3>
-            <p>Fresh and pure, manufactured without chemical preservatives.</p>
-          </div>
-
-          <!-- Card 4: No Side Effects -->
-          <div class="commitment-card">
-            <div class="commitment-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3>No Side Effects</h3>
-            <p>Safe, clean active nutrition designed for daily consumption.</p>
-          </div>
-
-          <!-- Card 5: 100% Pure, No Fillers -->
-          <div class="commitment-card">
-            <div class="commitment-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3>100% Pure, No Fillers</h3>
-            <p>Raw crystalline powder, containing zero fillers or binders.</p>
-          </div>
-
-          <!-- Card 6: Lab-tested Batches -->
-          <div class="commitment-card">
-            <div class="commitment-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3>Lab-tested Batches</h3>
-            <p>HPLC purity confirmations verified on every single batch.</p>
-          </div>
-        </div>
-
-        <!-- Secondary row of badges: logistics and quality standards -->
-        <div class="trust-badges-row">
-          <div class="badge-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-            <div>
-              <strong>Fast Delivery</strong>
-              <span>Free express shipping directly to your doorstep.</span>
-            </div>
-          </div>
-          <div class="badge-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            <div>
-              <strong>Secure Payments</strong>
-              <span>Cash on Delivery (COD) & safe UPI transfers.</span>
-            </div>
-          </div>
-          <div class="badge-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <div>
-              <strong>Hygienic Processing</strong>
-              <span>Sterile, GMP-compliant cleanroom packaging.</span>
-            </div>
-          </div>
-          <div class="badge-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            <div>
-              <strong>Traditional Heritage</strong>
-              <span>Indian traditional herbs, modern quality standards.</span>
+            <div class="commitment-card" style="text-align: left; align-items: flex-start; padding: 2rem;">
+              <h3 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v4"/><path d="M14 4v4"/><path d="M6 4v4"/><path d="M18 4v4"/></svg> Storage & Shelf Life</h3>
+              <p style="margin-bottom: 0.5rem;">Store in a cool, dry place away from direct sunlight. Keep the container tightly closed. Keep out of reach of children.</p>
+              <p style="margin: 0; font-weight: 600;">Best Before: 18 Months from the date of manufacture.</p>
             </div>
           </div>
         </div>
@@ -375,21 +299,21 @@
               <div class="pillar-bullet"></div>
               <div>
                 <strong>Premium Formulation</strong>
-                <span>Meticulously engineered for maximum dissolve rates and bioavailability.</span>
+                <span>A high-quality dietary supplement carefully designed for daily consumption.</span>
               </div>
             </div>
             <div class="pillar-item">
               <div class="pillar-bullet"></div>
               <div>
                 <strong>Enjoyable Experience</strong>
-                <span>Designed with great sensory profiles: appealing aroma and pleasant taste.</span>
+                <span>Designed with great sensory profiles: an appealing aroma and a pleasant taste.</span>
               </div>
             </div>
             <div class="pillar-item">
               <div class="pillar-bullet"></div>
               <div>
-                <strong>Certified Quality</strong>
-                <span>Manufactured under strict GMP protocols with independent lab confirmations.</span>
+                <strong>Quality Focus</strong>
+                <span>Committed to providing clear, verifiable information and genuine products to our customers.</span>
               </div>
             </div>
           </div>
@@ -420,7 +344,7 @@
               </div>
               <div class="detail-text-wrapper">
                 <span class="detail-label">Phone Support</span>
-                <a href="tel:+919876543210" class="detail-link">+91 98765 43210</a>
+                <a href="tel:+916357002100" class="detail-link">+91 63570 02100</a>
               </div>
             </div>
 
@@ -441,8 +365,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div class="detail-text-wrapper">
-                <span class="detail-label">Corporate Office</span>
-                <p class="detail-text">Shop - 7, Shyam 115, Near Om Circle, SP Ring Road, Vastral, Ahmedabad, Gujarat</p>
+                <span class="detail-label">Marketed By</span>
+                <p class="detail-text"><strong>Nexus Nutraceuticals</strong><br>Shivay Healthcare, Vastral, Ahmedabad - 382418.<br>FSSAI Lic No.: 10726994000740</p>
               </div>
             </div>
 
@@ -452,8 +376,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
               </div>
               <div class="detail-text-wrapper">
-                <span class="detail-label">Manufacturing Site</span>
-                <p class="detail-text">Zenics Nutraceuticals LLP, Sahitya Industrial Hub, 173, Bakrol, Gujarat 382430</p>
+                <span class="detail-label">Manufactured By</span>
+                <p class="detail-text"><strong>ZENICS NUTRACEUTICALS LLP</strong><br>173, Sahitya Industrial Hub, Village -Bakrol, Daskroi Ahmedabad - 382430<br>FSSAI Lic No.: 10722999001482</p>
               </div>
             </div>
           </div>
@@ -498,90 +422,24 @@
     </section>
 
     <!-- B12 Wellness Blog Section -->
+    <!-- Latest Articles Preview -->
     <section class="blog-section" id="blog">
       <div class="container">
         <div class="section-header-centered">
-          <span class="section-sub">B12 Wellness Journal</span>
-          <h2>The Purity & Absorption Science</h2>
-          <p class="section-desc-lead">Stay informed with scientific research and practical tips compiled by health professionals.</p>
+          <span class="section-sub">Nexus Knowledge Hub</span>
+          <h2>Latest Articles</h2>
+          <p class="section-desc-lead">Explore easy-to-understand articles about nutrition, vitamins, and everyday health awareness.</p>
         </div>
         
-        <div class="blog-grid">
-          <!-- Blog Card 1 -->
-          <div class="blog-card">
-            <div class="blog-card-visual">
-              <img src="/blog-purity.png" alt="B12 Purity Science" class="blog-img-cover" />
-              <span class="blog-category">Purity Science</span>
-            </div>
-            <div class="blog-card-content">
-              <div class="blog-meta">
-                <span>June 15, 2026</span>
-                <span class="meta-dot"></span>
-                <span>5 Min Read</span>
-              </div>
-              <h3>Cyanocobalamin vs. Methylcobalamin: Which B12 is Best?</h3>
-              <p>Explore the biochemical differences between active Vitamin B12 forms, absorption pathways, and how crystalline purity shapes cellular energy...</p>
-              <button class="blog-read-btn" data-article="article-1">
-                <span>Read Article</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
-          </div>
+        <div class="blog-grid" id="homepage-latest-blogs">
+          <!-- Injected via blog-ui.js -->
+        </div>
 
-          <!-- Blog Card 2 -->
-          <div class="blog-card">
-            <div class="blog-card-visual">
-              <img src="/blog-absorption.png" alt="B12 Bioavailability Science" class="blog-img-cover" />
-              <span class="blog-category">Bioavailability</span>
-            </div>
-            <div class="blog-card-content">
-              <div class="blog-meta">
-                <span>June 12, 2026</span>
-                <span class="meta-dot"></span>
-                <span>4 Min Read</span>
-              </div>
-              <h3>Why Water-Soluble Formula Absorbs 5x Faster Than Tablets</h3>
-              <p>Binders, chemical glues, and gastrointestinal barriers degrade standard B12 pills. Discover the sublingual and mucosal advantage of raw dissolved crystals...</p>
-              <button class="blog-read-btn" data-article="article-2">
-                <span>Read Article</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Blog Card 3 -->
-          <div class="blog-card">
-            <div class="blog-card-visual">
-              <img src="/blog-deficiency.png" alt="B12 Deficiency Symptoms" class="blog-img-cover" />
-              <span class="blog-category">Deficiency Signs</span>
-            </div>
-            <div class="blog-card-content">
-              <div class="blog-meta">
-                <span>June 08, 2026</span>
-                <span class="meta-dot"></span>
-                <span>6 Min Read</span>
-              </div>
-              <h3>Top 5 Critical Signs of Vitamin B12 Deficiency</h3>
-              <p>Chronic fatigue, cognitive brain fog, nerve tingling, and muscle weakness can indicate low B12. Learn how active supplementation restores neurological vitality...</p>
-              <button class="blog-read-btn" data-article="article-3">
-                <span>Read Article</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
-          </div>
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="/blog.html" class="btn btn-secondary">View All Articles</a>
         </div>
       </div>
     </section>
-
-    <!-- Blog Reader Modal Overlay -->
-    <div class="blog-modal-wrapper" id="blog-modal">
-      <div class="blog-modal-card">
-        <button class="blog-modal-close" id="blog-modal-close" aria-label="Close Article Drawer">&times;</button>
-        <div class="blog-modal-body" id="blog-modal-body">
-          <!-- Populated Dynamically via JS -->
-        </div>
-      </div>
-    </div>
 
     <!-- 6. FAQ Accordion Section -->
     <section class="faq-section" id="faqs">
@@ -647,9 +505,9 @@
         <p class="slogan-footer">Better health starts here</p>
         
         <div class="footer-compliance-info">
-          <p><strong>Corporate Address:</strong> Shop - 7, Shyam 115, Near Om Circle, Behind Reliance Petrol Pump, SP Ring Road, Vastral, Ahmedabad, Gujarat</p>
-          <p><strong>Manufactured By:</strong> Zenics Nutraceuticals LLP, Sahitya Industrial Hub, 173, Bakrol, Gujarat 382430</p>
-          <p><strong>Order & Support:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+          <p><strong>Marketed By:</strong><br><strong>Nexus Nutraceuticals</strong><br>Shivay Healthcare, Vastral, Ahmedabad - 382418.<br>FSSAI Lic No.: 10726994000740</p>
+          <p><strong>Manufactured By:</strong><br><strong>ZENICS NUTRACEUTICALS LLP</strong><br>173, Sahitya Industrial Hub, Village -Bakrol, Daskroi Ahmedabad - 382430<br>FSSAI Lic No.: 10722999001482</p>
+          <p><strong>Order & Support:</strong> <a href="tel:+916357002100">+91 63570 02100</a></p>
           <p><strong>Email:</strong> <a href="mailto:hello.nexusnutra@gmail.com">hello.nexusnutra@gmail.com</a></p>
         </div>
       </div>
@@ -659,11 +517,11 @@
         <h4>Quick Links</h4>
         <div class="footer-links-grid">
           <a href="#home">Home</a>
-          <a href="#benefits">Benefits</a>
+          <a href="/benefits.html">Benefits</a>
           <a href="#shop">Shop</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-          <a href="#blog">Blog</a>
+          <a href="/blog.html">Blog</a>
         </div>
       </div>
 
@@ -683,14 +541,8 @@
       <div class="footer-col social-col">
         <h4>Follow Us On</h4>
         <div class="footer-social-links">
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
-          </a>
           <a href="https://instagram.com" target="_blank" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-          </a>
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.53 3.545 12 3.545 12 3.545s-7.53 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.017 0 12 0 12s0 3.983.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.858.507 9.388.507 9.388.507s7.53 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.983 24 12 24 12s0-3.983-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
         </div>
       </div>
@@ -702,103 +554,14 @@
 
     <!-- Bottom content containing payment cards and copyright -->
     <div class="container footer-bottom-minimal">
-      <div class="footer-payments-block">
-        <span class="payments-title">We Accept</span>
-        <div class="payments-badges-row">
-          
-          <!-- Visa SVG -->
-          <svg viewBox="0 0 60 38" width="60" height="38" class="payment-card-svg" aria-label="Visa">
-            <rect width="58" height="36" x="1" y="1" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-            <g transform="translate(6, 6) scale(0.9)">
-              <path d="M19.2 24.3l2.8-12.4h3.7L22.9 24.3h-3.7zm15.1-12.1c-.6-.7-1.7-1-3.2-1-3.1 0-5.8 1.7-5.8 4.4 0 1.8 1.6 2.8 2.8 3.4 1.2.6 1.7 1 1.7 1.5 0 .8-1 1.2-1.9 1.2-1.6 0-2.5-.4-3.8-.9l-.5-.2-.6 2.7c.8.4 2.2.7 3.7.7 3.3 0 5.4-1.6 5.4-4.2 0-1.4-.9-2.5-2.8-3.4-1.2-.6-1.9-1-1.9-1.6 0-.6.6-1.1 1.8-1.1 1 0 1.7.2 2.3.5l.3.1.5-2.6zm6.3 3.6l1.8 4.9h-5l1-4.9h2.2zm3.3-3.9h-2.9c-.9 0-1.6.5-2 1.4l-7 11.2h3.9l.8-2.2h4.8l.5 2.2h3.4L43.9 11.9zm-31 0l-3.6 8.5-.4-1.9c-.7-2.4-2.9-5-5.4-6.3L7 24.3h3.9L16.8 12h-3.9z" fill="#0E45B4"/>
-              <path d="M10.9 11.9H7L3.5 21.1c-.4 1.1-.5 1.5-.5 2.1 0 1 .8 1.1 1.1 1.1h6.1c.9 0 1.7-.6 1.9-1.5l2.7-10.9h-3.9z" fill="#F7B614"/>
-            </g>
-          </svg>
 
-          <!-- Mastercard/Maestro (white card, red and cyan circles) -->
-          <svg viewBox="0 0 60 38" width="60" height="38" class="payment-card-svg" aria-label="Mastercard Maestro">
-            <rect width="58" height="36" x="1" y="1" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-            <g transform="translate(14, 8)">
-              <circle cx="11" cy="10" r="9" fill="#EB001B"/>
-              <circle cx="21" cy="10" r="9" fill="#00A3E0" fill-opacity="0.85"/>
-              <path d="M 16.5 2.6 A 9 9 0 0 0 16.5 17.4 A 9 9 0 0 0 16.5 2.6 Z" fill="#7C2B8A"/>
-            </g>
-          </svg>
-
-          <!-- Mastercard (black card, red and yellow circles) -->
-          <svg viewBox="0 0 60 38" width="60" height="38" class="payment-card-svg" aria-label="Mastercard">
-            <rect width="58" height="36" x="1" y="1" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-            <g transform="translate(14, 8)">
-              <circle cx="11" cy="10" r="9" fill="#EB001B"/>
-              <circle cx="21" cy="10" r="9" fill="#F79E1B" fill-opacity="0.9"/>
-              <path d="M 16.5 2.6 A 9 9 0 0 0 16.5 17.4 A 9 9 0 0 0 16.5 2.6 Z" fill="#FF5F00"/>
-            </g>
-          </svg>
-
-          <!-- RuPay -->
-          <svg viewBox="0 0 60 38" width="60" height="38" class="payment-card-svg" aria-label="RuPay">
-            <rect width="58" height="36" x="1" y="1" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-            <g transform="translate(6, 12) scale(0.95)">
-              <path d="M3 12h2.2l.6-2.6h1.7c1.3 0 2.2-.4 2.4-1.5.2-.9-.3-1.4-1.3-1.4H6.2l-1.3 5.5H3zm4-5.3h.8c.4 0 .6.2.5.5s-.2.5-.6.5H6.7l.3-1z" fill="#0A2240"/>
-              <path d="M9.8 12c.1-.6.5-1 1-1 .5 0 .6.3.5.7L10.7 12h2l.7-3.2H11.2l-.2.8c-.3-.6-1-.9-1.6-.9-.9 0-1.6.6-1.8 1.6l-.3 1.7h2.5z" fill="#0A2240"/>
-              <path d="M14.2 12h2.2l.6-2.6h1.7c1.3 0 2.2-.4 2.4-1.5.2-.9-.3-1.4-1.3-1.4H17.4l-1.3 5.5H14.2zm4-5.3h.8c.4 0 .6.2.5.5s-.2.5-.6.5h-.9l.3-1z" fill="#0D73C0"/>
-              <path d="M21.2 12h1.8l.2-.9c.3.6.9 1 1.6 1 .9 0 1.5-.7 1.7-1.6l.5-2.2H25l-.4 1.8c-.1.4-.4.6-.7.6-.3 0-.5-.2-.4-.5l.4-1.9h-1.8l-.9 3.7z" fill="#0D73C0"/>
-              <path d="M27.2 12h1.8l.8-3.2h-1.8l-.5 2.1-.7-2.1h-1.9l1.4 3.2-.8 3.2h1.8l.8-3.2z" fill="#0D73C0"/>
-              <polygon points="32.5,3.0 35.5,3.0 33.0,12.0 30.0,12.0" fill="#E87722"/>
-              <polygon points="35.5,3.0 38.5,3.0 36.0,12.0 33.0,12.0" fill="#A4D65E"/>
-              <polygon points="38.5,3.0 41.5,3.0 39.0,12.0 36.0,12.0" fill="#00A3E0"/>
-            </g>
-          </svg>
-
-          <!-- UPI -->
-          <svg viewBox="0 0 60 38" width="60" height="38" class="payment-card-svg" aria-label="UPI">
-            <rect width="58" height="36" x="1" y="1" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-            <g transform="translate(10, 11) scale(0.85)">
-              <path d="M2 1h2.2v7.5c0 1.2.7 1.8 1.8 1.8s1.8-.6 1.8-1.8V1H10v7.5c0 2.5-1.8 3.5-4 3.5s-4-1-4-3.5V1z" fill="#4B5563" transform="skewX(-15)"/>
-              <path d="M12.5 1h3.5c1.8 0 3 1 3 2.5s-1.2 2.5-3 2.5h-1.3V11h-2.2V1zm2.2 3.2h1.3c.5 0 .8-.2.8-.7s-.3-.7-.8-.7h-1.3v1.4z" fill="#4B5563" transform="skewX(-15)"/>
-              <path d="M21.5 1h2.2v10h-2.2V1z" fill="#4B5563" transform="skewX(-15)"/>
-              <polygon points="26,2 30,2 28,6 24,6" fill="#F48220" transform="skewX(-15)"/>
-              <polygon points="28.2,6.5 32.2,6.5 30.2,10.5 26.2,10.5" fill="#4AA846" transform="skewX(-15)"/>
-            </g>
-          </svg>
-
-          <!-- GPay -->
-          <svg viewBox="0 0 60 38" width="60" height="38" class="payment-card-svg" aria-label="GPay">
-            <rect width="58" height="36" x="1" y="1" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-            <g transform="translate(10, 9)">
-              <path d="M8.5 9.0c0-.6-.1-1.2-.2-1.7H4.2v3.3h2.4c-.1.7-.5 1.3-1.1 1.7v2.1h1.8c1.1-1 1.7-2.5 1.7-4.4z" fill="#4285F4"/>
-              <path d="M4.2 13.3c1.1 0 2.1-.4 2.8-1.1l-1.8-2.1c-.5.3-1.1.5-1.8.5-1.4 0-2.5-.9-2.9-2.2H.6v2.2c.8 1.6 2.3 2.7 3.6 2.7z" fill="#34A853"/>
-              <path d="M1.3 8.4c-.1-.3-.2-.7-.2-1.1s.1-.8.2-1.1V4.0H.6A4.2 4.2 0 00.6 10l.7-1.6z" fill="#FBBC05"/>
-              <path d="M4.2 4.6c.6 0 1.2.2 1.6.6l1.2-1.2C6.3 3.3 5.3 3.0 4.2 3.0 2.3 3.0.8 4.1.0 5.7l1.8 1.5c.4-1.3 1.5-2.2 2.4-2.2z" fill="#EA4335"/>
-              <path d="M12.2 5h1.8c.8 0 1.3.4 1.3 1s-.5 1-1.3 1h-.8v2h-1V5zm1 1.2h.8c.3 0 .5-.1.5-.4s-.2-.4-.5-.4h-.8v.8z" fill="#5F6368"/>
-              <path d="M16 7.2c0-.7.5-1.2 1.2-1.2s1.2.5 1.2 1.2v1.8h-1V8.5c-.2.3-.5.5-.9.5-.6 0-1-.4-1-1v-.8z" fill="#5F6368"/>
-              <path d="M19.5 6h1.2l.8 2.2.8-2.2h1.2l-1.5 3.8h-1l-1.5-3.8z" fill="#5F6368"/>
-            </g>
-          </svg>
-
-          <!-- COD -->
-          <svg viewBox="0 0 60 38" width="60" height="38" class="payment-card-svg" aria-label="Cash on Delivery">
-            <rect width="58" height="36" x="1" y="1" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
-            <g transform="translate(8, 10)">
-              <path d="M1 2h10v6H1V2z" fill="#1E4620"/>
-              <path d="M11 4h4l2 2v2h-6V4z" fill="#2E7D32"/>
-              <circle cx="3.5" cy="9" r="1.5" fill="#333333"/>
-              <circle cx="12.5" cy="9" r="1.5" fill="#333333"/>
-              <path d="M21 4.5c.8 0 1.3.4 1.3.9h-1c-.1-.2-.2-.3-.4-.3-.4 0-.6.3-.6.7s.2.7.6.7c.2 0 .3-.1.4-.3h1c-.1.5-.6.9-1.3.9-.9 0-1.6-.7-1.6-1.6s.7-1.6 1.6-1.6z" fill="#1E4620"/>
-              <path d="M25 4.5c.9 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6zm0 .6c-.5 0-.8.4-.8.9s.3.9.8.9.8-.4.8-.9-.3-.9-.8-.9z" fill="#1E4620"/>
-              <path d="M28.5 4.6h1.5c1 0 1.7.6 1.7 1.5s-.7 1.5-1.7 1.5h-1.5V4.6zm1 2.2h.5c.5 0 .8-.3.8-.7s-.3-.7-.8-.7h-.5v1.4z" fill="#1E4620"/>
-            </g>
-          </svg>
-
-        </div>
-      </div>
       <p class="copyright-text">&copy; 2026 Nexus Nutraceuticals. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Floating WhatsApp Action Link -->
   <div class="whatsapp-floating-minimal" id="whatsapp-floating-trigger">
-    <a href="https://wa.me/919876543210?text=Hello%20Nexus%20Nutraceuticals%2C%20I%20am%20interested%20in%20ordering%20Vitamin%20B12%20powder." target="_blank" aria-label="WhatsApp live sales desk">
+    <a href="https://wa.me/916357002100?text=Hello%20Nexus%20Nutraceuticals%2C%20I%20am%20interested%20in%20ordering%20Vitamin%20B12%20powder." target="_blank" aria-label="WhatsApp live sales desk">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.57 1.977 14.1 1.953 11.903 1.953c-5.438 0-9.865 4.372-9.87 9.802 0 1.63.454 3.224 1.316 4.634L2.26 21.758l5.522-1.45c-.44-.24-.87-.49-1.135-.154z"/><path d="M15.91 12.872c-.29-.145-1.72-.848-1.985-.944-.267-.099-.462-.147-.657.145-.196.291-.754.945-.924 1.137-.17.19-.34.213-.63.069-.29-.145-1.226-.452-2.334-1.44-.863-.769-1.447-1.72-1.616-2.011-.17-.29-.018-.448.126-.591.13-.13.29-.34.436-.51.145-.17.194-.29.29-.485.097-.193.048-.363-.024-.51-.07-.145-.656-1.58-.9-2.167-.236-.574-.477-.497-.655-.506-.17-.008-.365-.01-.56-.01-.196 0-.517.073-.787.364-.27.291-1.03 1.002-1.03 2.446s1.05 2.839 1.196 3.033c.145.194 2.067 3.15 5.003 4.417.699.301 1.244.482 1.67.618.703.223 1.344.192 1.85.117.564-.083 1.72-.703 1.964-1.382.244-.679.244-1.261.17-1.382-.073-.12-.267-.193-.558-.338z"/></svg>
     </a>
   </div>
@@ -814,283 +577,7 @@
     </div>
   </div>
 
-  <!-- Shopping Cart Drawer Overlay -->
-  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
 
-  <!-- Shopping Cart Drawer -->
-  <div class="cart-drawer" id="cart-drawer">
-    <div class="cart-drawer-header">
-      <h3>Your Cart</h3>
-      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close Cart">&times;</button>
-    </div>
-    <div class="cart-drawer-body">
-      <!-- Dynamic Empty Cart View -->
-      <div class="cart-empty-message" id="cart-empty-message">
-        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="empty-cart-icon"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        <p>Your shopping cart is currently empty.</p>
-        <a href="#shop" class="btn btn-primary close-cart-link" id="cart-empty-shop-btn">Shop Vitamin B12</a>
-      </div>
-      <!-- Dynamic Cart Items Container -->
-      <div class="cart-items-list" id="cart-items-list"></div>
-    </div>
-    <div class="cart-drawer-footer" id="cart-drawer-footer">
-      <div class="cart-total-row">
-        <span>Subtotal:</span>
-        <span class="cart-subtotal-val" id="cart-subtotal">₹0</span>
-      </div>
-      <div class="cart-shipping-row">
-        <span>Shipping:</span>
-        <span class="free-shipping-tag">FREE SHIPPING</span>
-      </div>
-      <button class="btn btn-primary btn-block" id="proceed-to-checkout-btn" disabled>Proceed to Checkout</button>
-    </div>
-  </div>
-
-  <!-- User Profile & Order History Drawer Overlay -->
-  <div class="profile-drawer-overlay" id="profile-drawer-overlay"></div>
-
-  <!-- User Profile & Order History Drawer -->
-  <div class="profile-drawer" id="profile-drawer">
-    <div class="profile-drawer-header">
-      <h3>My Account</h3>
-      <button class="profile-close-btn" id="profile-close-btn" aria-label="Close Profile Drawer">&times;</button>
-    </div>
-    <div class="profile-drawer-body">
-      <!-- Profile Information Card -->
-      <div class="profile-info-card">
-        <div class="profile-avatar-large" id="profile-avatar-large">-</div>
-        <h4 id="profile-user-name">-</h4>
-        <p id="profile-user-email">-</p>
-        <div class="profile-membership-badge">🌱 Healthy Life Member</div>
-        <div class="profile-meta-date" id="profile-meta-date">Member Since: -</div>
-      </div>
-
-      <div class="profile-divider-spacing"></div>
-
-      <!-- Order History Section -->
-      <div class="profile-orders-section">
-        <h5>My Orders</h5>
-        <div class="profile-orders-list" id="profile-orders-list">
-          <!-- Dynamic Order Cards will be injected here -->
-          <div class="orders-empty-state">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="empty-orders-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <p>No orders placed yet.</p>
-            <a href="#shop" class="btn btn-primary close-profile-link" id="profile-empty-shop-btn">Shop Vitamin B12</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="profile-drawer-footer">
-      <button class="btn btn-block btn-logout-drawer" id="profile-logout-btn">Log Out</button>
-    </div>
-  </div>
-
-  <!-- Checkout Popup Form Modal -->
-  <div class="checkout-modal-wrapper" id="checkout-modal">
-    <div class="checkout-modal-card">
-      <button class="checkout-modal-close" id="checkout-modal-close" aria-label="Close Checkout Modal">&times;</button>
-      
-      <!-- STEP 1: DELIVERY FORM -->
-      <div id="checkout-delivery-step">
-        <h4>Delivery & Payment Details</h4>
-        <p class="checkout-sub">Enter details to complete your order.</p>
-        
-        <form id="checkout-form" class="minimal-form">
-          <div class="form-input-group">
-            <input type="text" id="cust-name" placeholder="Full Name *" required />
-          </div>
-          <div class="form-input-group">
-            <input type="tel" id="cust-phone" placeholder="Mobile Number (10 Digits) *" pattern="[0-9]{10}" required />
-          </div>
-          <div class="form-input-group">
-            <input type="text" id="cust-pincode" placeholder="Pincode (6 Digits) *" pattern="[0-9]{6}" required />
-          </div>
-          <div class="form-input-group">
-            <textarea id="cust-address" rows="3" placeholder="Complete Delivery Address *" required></textarea>
-          </div>
-          
-          <div class="payment-method-group">
-            <span class="payment-group-label">Select Payment Method:</span>
-            <div class="payment-options">
-              <label class="payment-option-label">
-                <input type="radio" name="payment-method" value="COD" checked />
-                <span class="custom-radio"></span>
-                <span class="option-text">Cash on Delivery (COD)</span>
-              </label>
-              <label class="payment-option-label">
-                <input type="radio" name="payment-method" value="UPI" />
-                <span class="custom-radio"></span>
-                <span class="option-text">UPI / NetBanking (Online)</span>
-              </label>
-            </div>
-            <p class="payment-note" id="payment-note-text">No pre-payment required. Pay when delivered.</p>
-          </div>
-          
-          <button type="submit" class="btn btn-primary btn-block" id="submit-checkout-btn">
-            <span>Confirm Order (COD)</span>
-          </button>
-        </form>
-      </div>
-
-      <!-- STEP 2: UPI PAYMENT PORTAL -->
-      <div id="checkout-upi-step" class="hidden">
-        <h4>UPI Payment</h4>
-        <p class="checkout-sub">Scan the QR code using any UPI app (GPay, PhonePe, Paytm, BHIM) to complete your payment.</p>
-        
-        <div class="upi-portal-content">
-          <div class="upi-qr-box">
-            <!-- Sleek simulated QR Code SVG -->
-            <svg class="mock-qr-code" width="160" height="160" viewBox="0 0 100 100">
-              <rect x="0" y="0" width="100" height="100" fill="#fff" rx="4" />
-              <rect x="10" y="10" width="25" height="25" fill="none" stroke="var(--primary)" stroke-width="6" />
-              <rect x="15" y="15" width="15" height="15" fill="var(--accent)" />
-              <rect x="65" y="10" width="25" height="25" fill="none" stroke="var(--primary)" stroke-width="6" />
-              <rect x="70" y="15" width="15" height="15" fill="var(--accent)" />
-              <rect x="10" y="65" width="25" height="25" fill="none" stroke="var(--primary)" stroke-width="6" />
-              <rect x="15" y="70" width="15" height="15" fill="var(--accent)" />
-              <rect x="45" y="10" width="8" height="8" fill="#1e293b" />
-              <rect x="50" y="25" width="6" height="6" fill="#1e293b" />
-              <rect x="40" y="40" width="10" height="8" fill="#1e293b" />
-              <rect x="75" y="45" width="12" height="6" fill="#1e293b" />
-              <rect x="65" y="60" width="8" height="12" fill="#1e293b" />
-              <rect x="45" y="70" width="10" height="10" fill="#1e293b" />
-              <rect x="80" y="80" width="10" height="10" fill="#1e293b" />
-              <rect x="10" y="45" width="10" height="6" fill="#1e293b" />
-              <rect x="25" y="55" width="8" height="8" fill="#1e293b" />
-              <rect x="55" y="50" width="8" height="8" fill="var(--accent)" />
-            </svg>
-            <span class="qr-subtext">Scan to pay ₹499</span>
-          </div>
-
-          <div class="upi-details-card">
-            <div class="upi-detail-row">
-              <span class="upi-lbl">UPI ID:</span>
-              <strong class="upi-val" id="upi-val-id">pay@nexusnutra</strong>
-              <button class="btn-copy-upi" id="copy-upi-btn" type="button" aria-label="Copy UPI ID">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                <span id="copy-status">Copy</span>
-              </button>
-            </div>
-            <div class="upi-detail-row">
-              <span class="upi-lbl">Amount:</span>
-              <strong class="upi-val" id="upi-amount-val">₹499</strong>
-            </div>
-          </div>
-
-          <form id="upi-verification-form" class="minimal-form">
-            <div class="form-input-group">
-              <input type="text" id="upi-utr" placeholder="12-Digit Transaction UTR / Ref No. *" pattern="[0-9]{12}" required />
-            </div>
-            <div class="upi-actions">
-              <button type="button" class="btn btn-secondary-link" id="upi-back-btn">Back</button>
-              <button type="submit" class="btn btn-primary" id="confirm-payment-btn">Verify & Confirm</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <!-- STEP 3: ORDER SUCCESS SCREEN -->
-      <div id="checkout-success-step" class="hidden">
-        <div class="success-screen-content">
-          <div class="success-checkmark-box">
-            <div class="success-circle">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="checkmark-icon">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-          </div>
-          <h4>Order Placed Successfully!</h4>
-          <p class="success-subtitle">Thank you for your order. We are preparing your fresh supply.</p>
-          
-          <div class="order-receipt-card">
-            <div class="receipt-row">
-              <span class="receipt-lbl">Order ID:</span>
-              <strong class="receipt-val" id="receipt-order-id">#NX-123456</strong>
-            </div>
-            <div class="receipt-row">
-              <span class="receipt-lbl">Product:</span>
-              <span class="receipt-val" id="receipt-items">1x Vitamin B12 (100g Jar)</span>
-            </div>
-            <div class="receipt-row">
-              <span class="receipt-lbl">Total Bill:</span>
-              <span class="receipt-val" id="receipt-total">₹499</span>
-            </div>
-            <div class="receipt-row">
-              <span class="receipt-lbl">Payment:</span>
-              <span class="receipt-val" id="receipt-payment">Cash on Delivery</span>
-            </div>
-            <div class="receipt-divider"></div>
-            <div class="receipt-row flex-col">
-              <span class="receipt-lbl">Shipping To:</span>
-              <span class="receipt-address-val" id="receipt-shipping-address">Address here</span>
-            </div>
-          </div>
-
-          <button class="btn btn-primary btn-block" id="success-done-btn" type="button">Continue Shopping</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Authentication Modal (Register / Login) -->
-  <div class="auth-modal-wrapper" id="auth-modal">
-    <div class="auth-modal-card">
-      <button class="auth-modal-close" id="auth-modal-close" aria-label="Close Auth Modal">&times;</button>
-      
-      <!-- Logo Mark Header -->
-      <div class="auth-card-header">
-        <img src="/logo-mark.png" alt="Nexus Logo Mark" class="auth-logo-img" />
-        <h3>NEXUS NUTRACEUTICALS</h3>
-        <p class="auth-subtitle" id="auth-subtitle">Sign in to manage your health journal and orders.</p>
-      </div>
-
-      <!-- Tab Headers -->
-      <div class="auth-tabs">
-        <button class="auth-tab-btn active" data-tab="login">Sign In</button>
-        <button class="auth-tab-btn" data-tab="register">Create Account</button>
-      </div>
-
-      <!-- Error / Success feedback notification -->
-      <div class="auth-feedback hidden" id="auth-feedback"></div>
-
-      <!-- Login Form -->
-      <form id="login-form" class="auth-form active">
-        <div class="form-input-wrapper">
-          <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <input type="email" id="login-email" placeholder="Email Address *" required />
-        </div>
-        <div class="form-input-wrapper">
-          <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          <input type="password" id="login-password" placeholder="Password *" required />
-        </div>
-        <button type="submit" class="btn btn-primary btn-block btn-auth-submit" id="login-submit-btn">
-          <span>Sign In</span>
-          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-      </form>
-
-      <!-- Register Form -->
-      <form id="register-form" class="auth-form">
-        <div class="form-input-wrapper">
-          <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          <input type="text" id="register-name" placeholder="Full Name *" required />
-        </div>
-        <div class="form-input-wrapper">
-          <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <input type="email" id="register-email" placeholder="Email Address *" required />
-        </div>
-        <div class="form-input-wrapper">
-          <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          <input type="password" id="register-password" placeholder="Password (Min. 6 chars) *" minlength="6" required />
-        </div>
-        <button type="submit" class="btn btn-primary btn-block btn-auth-submit" id="register-submit-btn">
-          <span>Create Account</span>
-          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-      </form>
-    </div>
-  </div>
 
   <!-- Script Modules -->
   <script type="module" src="/src/main.js"></script>
