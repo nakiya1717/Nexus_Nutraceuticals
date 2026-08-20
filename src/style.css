@@ -5233,6 +5233,21 @@ p {
   z-index: 2;
   align-items: flex-end;
 }
+.commitment-card {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  padding: 2.2rem 2rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
 .jar-wrapper {
   position: relative;
   display: flex;
