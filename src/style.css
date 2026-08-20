@@ -4856,6 +4856,10 @@ p {
   gap: 2rem;
 }
 
+.nutrition-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
 .commitment-card {
   background-color: var(--bg-light);
   border: 1px solid var(--border-color);
@@ -4961,7 +4965,7 @@ p {
 }
 
 @media (max-width: 575px) {
-  .commitments-grid {
+  .commitments-grid, .nutrition-grid {
     grid-template-columns: 1fr;
   }
   
