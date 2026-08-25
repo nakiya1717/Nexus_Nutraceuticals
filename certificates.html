@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logo-mark.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates & Compliance | Nexus Nutraceuticals</title>
+  <meta name="description" content="View the genuine business certificates and compliance documents for Nexus Nutraceuticals." />
+  <link rel="canonical" href="https://www.nexusnutraceutical.com/certificates.html" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="minimal-header blog-sticky-header">
+    <div class="header-container">
+      <a href="/index.html" class="logo">
+        <img src="/logo-mark.png" alt="Nexus Nutraceuticals Logo" class="logo-img" />
+        <div class="logo-text-wrapper">
+          <span class="logo-text">NEXUS <span class="logo-sub">NUTRACEUTICALS</span></span>
+          <span class="logo-tagline">Better health starts here</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+                    <nav class="minimal-nav">
+          <ul>
+            <li><a href="/" data-nav="home" class="nav-link">Home</a></li>
+            <li><a href="/index.html#benefits" data-nav="benefits" class="nav-link">Benefits</a></li>
+            <li><a href="/index.html#shop" data-nav="shop" class="nav-link">Shop</a></li>
+            <li><a href="/index.html#about" data-nav="about" class="nav-link">About</a></li>
+            <li><a href="/index.html#contact" data-nav="contact" class="nav-link">Contact</a></li>
+            <li><a href="/index.html#blog" data-nav="blog" class="nav-link">Blog</a></li>
+            <li><a href="/certificates.html" data-nav="certificates" class="nav-link">Certificates</a></li>
+          </ul>
+        </nav>
+      <button class="nav-hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="certificates-section" style="padding: 100px 0 60px 0; background-color: #f8fafc; min-height: calc(100vh - 350px);">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="section-sub">Trust & Transparency</span>
+          <h2>Certificates & Compliance</h2>
+          <p class="section-desc-lead" style="max-width: 600px; margin: 0 auto 3rem auto;">We believe in transparency and providing access to genuine business and compliance documents.</p>
+        </div>
+
+        <div class="certificates-grid">
+          <!-- FSSAI Certificate Card -->
+          <div class="certificate-card">
+            <div class="certificate-preview" onclick="openCertificateModal('/fssai-certificate.jpg', 'FSSAI License')">
+              <img src="/fssai-certificate.jpg" alt="FSSAI License Certificate Preview" class="cert-img" />
+              <div class="preview-overlay">
+                <span class="view-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </span>
+                <span>Click to View</span>
+              </div>
+            </div>
+            <div class="certificate-info">
+              <h3>FSSAI License</h3>
+              <button onclick="openCertificateModal('/fssai-certificate.jpg', 'FSSAI License')" class="btn btn-outline" style="width: 100%;">View Certificate</button>
+            </div>
+          </div>
+
+          <!-- GST Certificate Card -->
+          <div class="certificate-card">
+            <div class="certificate-preview" onclick="openCertificateModal('/gst-certificate.jpg', 'GST Registration')">
+              <img src="/gst-certificate.jpg" alt="GST Registration Certificate Preview" class="cert-img" />
+              <div class="preview-overlay">
+                <span class="view-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </span>
+                <span>Click to View</span>
+              </div>
+            </div>
+            <div class="certificate-info">
+              <h3>GST Registration</h3>
+              <button onclick="openCertificateModal('/gst-certificate.jpg', 'GST Registration')" class="btn btn-outline" style="width: 100%;">View Certificate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Modal Viewer -->
+    <div id="certificateModal" class="cert-modal">
+      <div class="cert-modal-content">
+        <div class="cert-modal-header">
+          <h3 id="certModalTitle">Certificate Viewer</h3>
+          <button class="cert-modal-close" onclick="closeCertificateModal()">&times;</button>
+        </div>
+        <div class="cert-modal-body">
+          <img id="certModalImg" src="" alt="Full Certificate" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="minimal-footer">
+    <div class="container footer-content-minimal">
+      
+      <!-- Brand column -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <img src="/logo-mark.png" alt="Nexus Logo Mark" class="logo-img-footer" />
+          <span class="footer-logo-text">NEXUS <span class="logo-sub-footer">NUTRACEUTICALS</span></span>
+        </div>
+        <p class="slogan-footer">Better health starts here</p>
+        
+        <div class="footer-compliance-info">
+          <p data-setting="marketed-by-block"><strong>Marketed By:</strong><br><strong>Nexus Nutraceuticals</strong><br>Shivay Healthcare, Vastral, Ahmedabad - 382418.<br>FSSAI Lic No.: 10726994000740</p>
+          <p data-setting="manufactured-by-block"><strong>Manufactured By:</strong><br><strong>ZENICS NUTRACEUTICALS LLP</strong><br>173, Sahitya Industrial Hub, Village -Bakrol, Daskroi Ahmedabad - 382430<br>FSSAI Lic No.: 10722999001482</p>
+          <p><strong>Order & Support:</strong> <a href="tel:+916357002100">+91 63570 02100</a></p>
+          <p><strong>Email:</strong> <a href="mailto:hello.nexusnutra@gmail.com">hello.nexusnutra@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col links-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links-grid">
+          <a href="/index.html#home">Home</a>
+          <a href="/benefits.html">Benefits</a>
+          <a href="/index.html#shop">Shop</a>
+          <a href="/index.html#about">About</a>
+          <a href="/index.html#contact">Contact</a>
+          <a href="/blog.html">Blog</a>
+        </div>
+      </div>
+
+      <!-- Information -->
+                  <div class="footer-col info-col">
+        <h4>Information</h4>
+        <div class="footer-links-grid">
+          <a href="/certificates.html">Certificates</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/refund-return-policy">Refund Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/shipping-policy">Shipping Policy</a>
+          <a href="/careers">Careers</a>
+        </div>
+      </div>
+
+      <!-- Socials -->
+      <div class="footer-col social-col">
+        <h4>Follow Us On</h4>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/nexus_nutraceutical/" data-setting="instagram-link" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider Line -->
+    <hr class="footer-divider-line" />
+    <div class="container footer-bottom-minimal">
+      <p class="copyright-text">&copy; 2026 Nexus Nutraceuticals. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Floating WhatsApp Action Link -->
+  <div class="whatsapp-floating-minimal" id="whatsapp-floating-trigger">
+    <a href="https://wa.me/916357002100?text=Hello%20Nexus%20Nutraceuticals%2C%20I%20am%20interested%20in%20ordering%20Vitamin%20B12%20powder." data-setting="whatsapp-link" target="_blank" aria-label="WhatsApp live sales desk">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.57 1.977 14.1 1.953 11.903 1.953c-5.438 0-9.865 4.372-9.87 9.802 0 1.63.454 3.224 1.316 4.634L2.26 21.758l5.522-1.45c-.44-.24-.87-.49-1.135-.154z"/><path d="M15.91 12.872c-.29-.145-1.72-.848-1.985-.944-.267-.099-.462-.147-.657.145-.196.291-.754.945-.924 1.137-.17.19-.34.213-.63.069-.29-.145-1.226-.452-2.334-1.44-.863-.769-1.447-1.72-1.616-2.011-.17-.29-.018-.448.126-.591.13-.13.29-.34.436-.51.145-.17.194-.29.29-.485.097-.193.048-.363-.024-.51-.07-.145-.656-1.58-.9-2.167-.236-.574-.477-.497-.655-.506-.17-.008-.365-.01-.56-.01-.196 0-.517.073-.787.364-.27.291-1.03 1.002-1.03 2.446s1.05 2.839 1.196 3.033c.145.194 2.067 3.15 5.003 4.417.699.301 1.244.482 1.67.618.703.223 1.344.192 1.85.117.564-.083 1.72-.703 1.964-1.382.244-.679.244-1.261.17-1.382-.073-.12-.267-.193-.558-.338z"/></svg>
+    </a>
+  </div>
+  
+  <script>
+    function openCertificateModal(imageSrc, title) {
+      document.getElementById('certModalImg').src = imageSrc;
+      document.getElementById('certModalTitle').textContent = title;
+      document.getElementById('certificateModal').classList.add('active');
+      
+      // Stop background scrolling robustly
+      document.body.classList.add('no-scroll');
+      document.documentElement.classList.add('no-scroll');
+    }
+
+    function closeCertificateModal() {
+      document.getElementById('certificateModal').classList.remove('active');
+      
+      // Restore background scrolling
+      document.body.classList.remove('no-scroll');
+      document.documentElement.classList.remove('no-scroll');
+      
+      // Clear image source after a brief delay to allow transition to finish
+      setTimeout(() => {
+        document.getElementById('certModalImg').src = '';
+      }, 300);
+    }
+
+    // Close modal when clicking outside the content
+    document.getElementById('certificateModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeCertificateModal();
+      }
+    });
+    
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && document.getElementById('certificateModal').classList.contains('active')) {
+        closeCertificateModal();
+      }
+    });
+  </script>
+  <script type="module" src="/src/main.js"></script>
+
+  <div class="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer-menu">
+    <button class="drawer-menu-close" aria-label="Close Menu">×</button>
+                <nav class="drawer-menu-nav"><ul>
+      <li><a href="/" data-nav="home" class="drawer-menu-link">Home</a></li>
+      <li><a href="/index.html#benefits" data-nav="benefits" class="drawer-menu-link">Benefits</a></li>
+      <li><a href="/index.html#shop" data-nav="shop" class="drawer-menu-link">Shop</a></li>
+      <li><a href="/index.html#about" data-nav="about" class="drawer-menu-link">About</a></li>
+      <li><a href="/index.html#contact" data-nav="contact" class="drawer-menu-link">Contact</a></li>
+      <li><a href="/index.html#blog" data-nav="blog" class="drawer-menu-link">Blog</a></li>
+      <li><a href="/certificates.html" data-nav="certificates" class="drawer-menu-link">Certificates</a></li>
+      <li><a href="/careers" data-nav="careers" class="drawer-menu-link" style="color:var(--accent);">Careers</a></li>
+    </ul></nav>
+  </div>
+
+</body>
+</html>

@@ -1,9 +1,22 @@
 {
   "version": 2,
+  "cleanUrls": true,
   "rewrites": [
     {
       "source": "/api/:path*",
       "destination": "/api/server.js"
+    },
+    {
+      "source": "/careers",
+      "destination": "/careers.html"
+    },
+    {
+      "source": "/careers/",
+      "destination": "/careers.html"
+    },
+    {
+      "source": "/careers/:slug",
+      "destination": "/career-details.html"
     }
   ]
 }

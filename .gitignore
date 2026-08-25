@@ -27,3 +27,11 @@ dist-ssr
 
 # Local JSON Database
 data/
+
+# Python
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+.env
+.env.*

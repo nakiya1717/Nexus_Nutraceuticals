@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Details - Nexus Nutraceuticals</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/careers.css">
+</head>
+<body class="career-details-page">
+
+  <header class="policy-header-nav" style="background:#ffffff; border-bottom:1px solid #e2e8f0;">
+    <div class="container" style="max-width:1200px; margin: 0 auto; display:flex; justify-content:space-between; align-items:center; padding: 1rem 1.5rem;">
+      <a href="/" class="logo" style="display:flex; align-items:center; gap:0.5rem; text-decoration:none;">
+        <img src="/logo-mark.png" alt="Nexus Nutraceuticals" style="height:35px;">
+        <div class="logo-text-wrapper" style="display:flex; flex-direction:column; line-height:1;">
+          <span class="logo-text" style="color:var(--car-primary); font-weight:800; font-size:1.1rem; letter-spacing:1px;">NEXUS <span style="color:var(--car-accent); font-weight:400;">NUTRACEUTICALS</span></span>
+        </div>
+      </a>
+      <a href="/careers" class="back-home" style="text-decoration:none; color:var(--car-primary); font-weight:600; font-size:0.95rem; border:1px solid #e2e8f0; padding:0.4rem 1rem; border-radius:20px; transition:all 0.3s;">← Back to Careers</a>
+    </div>
+  </header>
+
+  <div id="job-detail-main">
+    <div class="container" style="max-width:1200px; margin: 4rem auto; padding:0 1.5rem;">
+      <div class="skeleton-loader hero-skeleton" style="height:400px; border-radius:16px;"></div>
+    </div>
+  </div>
+
+  <!-- Application Section (Inline) -->
+  <section id="apply-section" style="display:none; background:#ffffff; border-top:1px solid #e2e8f0; padding:5rem 1.5rem;">
+    <div class="container" style="max-width:800px; margin:0 auto;">
+      
+      <div id="form-container">
+        <div style="text-align:center; margin-bottom:3rem;">
+          <h2 class="application-form-title" style="margin-bottom:0.5rem;">Take the Next Step</h2>
+          <h3 style="font-size:2rem; color:var(--car-primary); margin-top:0; margin-bottom:1.5rem;">Apply for This Position</h3>
+          <p style="color:#64748b; font-size:1.1rem; margin-bottom:2rem;">Tell us a little about yourself. It only takes a few minutes to apply.</p>
+          
+          <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; color:#475569; font-size:0.95rem; font-weight:500;">
+            <span><span style="color:var(--car-accent); margin-right:0.3rem;">✓</span> Quick application process</span>
+            <span><span style="color:var(--car-accent); margin-right:0.3rem;">✓</span> Your information is handled securely</span>
+            <span><span style="color:var(--car-accent); margin-right:0.3rem;">✓</span> We will review your application carefully</span>
+          </div>
+        </div>
+
+        <form id="job-application-form" enctype="multipart/form-data">
+          
+          <div class="form-section">
+            <h3><span class="step-num">1</span> Your Details</h3>
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="full_name" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Mobile Number *</label>
+                <input type="tel" name="mobile_number" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Current City *</label>
+                <select name="current_city" class="custom-select" required style="width:100%; padding:0.9rem 1rem; border:1px solid #cbd5e1; border-radius:8px; font-size:1rem; background:#ffffff;">
+                  <option value="">Select your city...</option>
+                  <option value="Ahmedabad">Ahmedabad</option>
+                  <option value="Gandhinagar">Gandhinagar</option>
+                  <option value="Surat">Surat</option>
+                  <option value="Vadodara">Vadodara</option>
+                  <option value="Rajkot">Rajkot</option>
+                  <option value="Jamnagar">Jamnagar</option>
+                  <option value="Bhavnagar">Bhavnagar</option>
+                  <option value="Junagadh">Junagadh</option>
+                  <option value="Anand">Anand</option>
+                  <option value="Mehsana">Mehsana</option>
+                  <option value="Morbi">Morbi</option>
+                  <option value="Surendranagar">Surendranagar</option>
+                  <option value="Bharuch">Bharuch</option>
+                  <option value="Vapi">Vapi</option>
+                  <option value="Navsari">Navsari</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group" id="other-city-group" style="display:none;">
+                <label>Please enter your city *</label>
+                <input type="text" name="current_city_other" id="current_city_other">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Current Address (Optional)</label>
+              <input type="text" name="current_address">
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3><span class="step-num">2</span> Your Experience</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Education *</label>
+                <input type="text" name="highest_education" required placeholder="e.g. B.Com, MBA">
+              </div>
+              <div class="form-group">
+                <label>Current/Previous Role (Optional)</label>
+                <input type="text" name="current_job_title" placeholder="Job Title">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Total Experience *</label>
+                <input type="text" name="total_experience" required placeholder="e.g. 2 Years, Fresher">
+              </div>
+              <div class="form-group">
+                <label>Expected Salary *</label>
+                <input type="text" name="expected_salary" required placeholder="e.g. Negotiable, 3LPA">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Notice Period *</label>
+              <input type="text" name="notice_period" required placeholder="e.g. Immediate, 15 Days">
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3><span class="step-num">3</span> Role Fit</h3>
+            <div class="form-group">
+              <label>Do you have a two-wheeler? *</label>
+              <div class="segmented-control">
+                <label>
+                  <input type="radio" name="has_two_wheeler" value="true" required>
+                  <span class="radio-card">Yes</span>
+                </label>
+                <label>
+                  <input type="radio" name="has_two_wheeler" value="false">
+                  <span class="radio-card">No</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Are you comfortable with field marketing? *</label>
+              <div class="segmented-control">
+                <label>
+                  <input type="radio" name="comfortable_with_field_marketing" value="true" required>
+                  <span class="radio-card">Yes</span>
+                </label>
+                <label>
+                  <input type="radio" name="comfortable_with_field_marketing" value="false">
+                  <span class="radio-card">No</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Are you comfortable visiting medical stores, pharmacies, clinics, and potential business partners? *</label>
+              <div class="segmented-control">
+                <label>
+                  <input type="radio" name="comfortable_with_business_visits" value="true" required>
+                  <span class="radio-card">Yes</span>
+                </label>
+                <label>
+                  <input type="radio" name="comfortable_with_business_visits" value="false">
+                  <span class="radio-card">No</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3><span class="step-num">4</span> Resume & Final Details</h3>
+            <div class="form-group">
+              <label>Upload Your Resume *</label>
+              <div class="file-upload-area" id="file-upload-area">
+                <input type="file" name="resume" id="resume-input" accept=".pdf,.doc,.docx" required>
+                <div class="file-upload-icon">📄</div>
+                <div class="file-upload-text">Drag & drop or click to upload</div>
+                <div class="file-upload-hint">PDF, DOC or DOCX up to 5MB</div>
+              </div>
+              <div class="file-selected-info" id="file-selected-info">
+                <span id="file-name-display">resume.pdf</span>
+                <button type="button" class="btn-small btn-outline" id="remove-file-btn">Change</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Why do you want to join Nexus Nutraceuticals? (Optional)</label>
+              <textarea name="why_join" rows="3" placeholder="Tell us briefly about your motivation..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-section consent-section" style="background:transparent; border:none; padding:0; margin-bottom:3rem;">
+            <label class="checkbox-label" style="display:flex; align-items:flex-start; gap:0.8rem; cursor:pointer;">
+              <input type="checkbox" name="consent_accepted" required style="margin-top:0.3rem;">
+              <span style="font-size:0.95rem; color:#475569;">I confirm that the information provided by me is accurate and I agree that Nexus Nutraceuticals may use my information for recruitment purposes.</span>
+            </label>
+          </div>
+
+          <div class="reassurance-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:1.5rem; margin-bottom:2rem;">
+            <h4 style="margin-top:0; margin-bottom:1rem; color:var(--car-primary); display:flex; align-items:center; gap:0.5rem;">
+              <span style="font-size:1.2rem;">👋</span> What happens next?
+            </h4>
+            <ul style="margin:0; padding-left:1.5rem; color:#475569; font-size:0.95rem; line-height:1.6;">
+              <li style="margin-bottom:0.5rem;">Submit your application.</li>
+              <li style="margin-bottom:0.5rem;">Our team reviews your profile.</li>
+              <li>If your profile matches the role, we may contact you about the next steps.</li>
+            </ul>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-block submit-btn" style="padding:1.2rem; font-size:1.15rem;">Submit My Application →</button>
+            <div class="form-error" id="form-error" style="color:#ef4444; margin-top:1rem; text-align:center; font-weight:500;"></div>
+          </div>
+          
+          <!-- Cancel/Clear Data -->
+          <div style="text-align:center; margin-top:1.5rem;">
+            <button type="button" id="clear-form-btn" style="background:transparent; border:none; color:#64748b; text-decoration:underline; cursor:pointer; font-size:0.9rem;">Cancel / Clear Form</button>
+          </div>
+        </form>
+
+        <div style="text-align:center; margin-top:4rem; padding-top:2rem; border-top:1px solid #e2e8f0;">
+          <h4 style="display:flex; justify-content:center; align-items:center; gap:0.5rem; color:#475569; margin-bottom:0.5rem;">
+            <span>🔒</span> Your Privacy Matters
+          </h4>
+          <p style="font-size:0.85rem; color:#64748b; max-width:400px; margin:0 auto 1rem;">We use your application information only for recruitment-related purposes.</p>
+          <div style="display:flex; justify-content:center; gap:1.5rem;">
+            <a href="/privacy-policy" style="color:var(--car-primary); text-decoration:none; font-size:0.9rem; font-weight:500;">Privacy Policy</a>
+            <span style="color:#cbd5e1;">•</span>
+            <a href="/terms-of-service" style="color:var(--car-primary); text-decoration:none; font-size:0.9rem; font-weight:500;">Terms of Service</a>
+          </div>
+        </div>
+
+      </div>
+      
+      <div id="application-success" class="success-state hidden" style="background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; padding:4rem 2rem;">
+        <div class="success-icon">🎉</div>
+        <h3 style="font-size:2.5rem; margin-bottom:1rem;">Application Received!</h3>
+        <p style="font-size:1.1rem; color:#475569; max-width:500px; margin:0 auto 2rem;">Thank you for applying to Nexus Nutraceuticals. We've successfully received your application. Our team will review your profile. If your experience and skills match our current requirements, we may contact you regarding the next steps.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="/careers" class="btn btn-primary">Explore Other Opportunities</a>
+          <a href="/" class="btn btn-outline">Back to Home</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cancel Confirmation Modal -->
+  <div id="cancel-modal" class="modal-overlay hidden" style="position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(15,23,42,0.6); z-index:9999; display:flex; align-items:center; justify-content:center; padding:1.5rem;">
+    <div style="background:#ffffff; padding:2.5rem; border-radius:16px; max-width:450px; width:100%; box-shadow:0 20px 40px rgba(0,0,0,0.1);">
+      <h3 style="color:var(--car-primary); margin-top:0; margin-bottom:1rem; font-size:1.5rem;">Leave Your Application?</h3>
+      <p style="color:#475569; margin-bottom:2rem; line-height:1.6;">You have entered information that has not been submitted yet.<br>Would you like to keep your progress or discard it?</p>
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <button id="cancel-continue-btn" class="btn btn-primary btn-block">Continue Editing</button>
+        <button id="cancel-discard-btn" class="btn btn-outline btn-block" style="border-color:#ef4444; color:#ef4444 !important;">Discard Application</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/careers.js"></script>
+
+  <!-- Floating WhatsApp Action Link -->
+  <div class="whatsapp-floating-minimal" id="whatsapp-floating-trigger">
+    <a href="https://wa.me/916357002100?text=Hello%20Nexus%20Nutraceuticals%2C%20I%20am%20interested%20in%20ordering%20Vitamin%20B12%20powder." data-setting="whatsapp-link" target="_blank" aria-label="WhatsApp live sales desk">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.57 1.977 14.1 1.953 11.903 1.953c-5.438 0-9.865 4.372-9.87 9.802 0 1.63.454 3.224 1.316 4.634L2.26 21.758l5.522-1.45c-.44-.24-.87-.49-1.135-.154z"/><path d="M15.91 12.872c-.29-.145-1.72-.848-1.985-.944-.267-.099-.462-.147-.657.145-.196.291-.754.945-.924 1.137-.17.19-.34.213-.63.069-.29-.145-1.226-.452-2.334-1.44-.863-.769-1.447-1.72-1.616-2.011-.17-.29-.018-.448.126-.591.13-.13.29-.34.436-.51.145-.17.194-.29.29-.485.097-.193.048-.363-.024-.51-.07-.145-.656-1.58-.9-2.167-.236-.574-.477-.497-.655-.506-.17-.008-.365-.01-.56-.01-.196 0-.517.073-.787.364-.27.291-1.03 1.002-1.03 2.446s1.05 2.839 1.196 3.033c.145.194 2.067 3.15 5.003 4.417.699.301 1.244.482 1.67.618.703.223 1.344.192 1.85.117.564-.083 1.72-.703 1.964-1.382.244-.679.244-1.261.17-1.382-.073-.12-.267-.193-.558-.338z"/></svg>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,3 +1,4 @@
+import './nav.js';
 import { blogData } from './blog-data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
