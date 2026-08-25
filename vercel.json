@@ -18,5 +18,10 @@
       "source": "/careers/:slug",
       "destination": "/career-details.html"
     }
-  ]
+  ],
+  "functions": {
+    "api/server.js": {
+      "includeFiles": "api/*.json"
+    }
+  }
 }

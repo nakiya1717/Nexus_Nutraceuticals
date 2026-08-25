@@ -229,34 +229,20 @@ app.get('/api/orders/user/:userId', (req, res) => {
 });
 
 // 5. Mock Policies Route
-app.get('/api/policies/:slug/', (req, res) => {
-  let slug = req.params.slug;
+app.get('/api/policies/*', (req, res) => {
+  let url = req.url;
   try {
     const policies = JSON.parse(fs.readFileSync(path.join(__dirname, 'policies.json'), 'utf8'));
+    const slug = url.split('/').filter(Boolean).pop();
     const policy = policies.find(p => p.slug === slug);
     if (policy) {
       res.json(policy);
     } else {
-      res.status(404).json({ error: 'Policy not found' });
+      res.status(404).json({ error: 'CUSTOM_404_NOT_FOUND_SLUG_' + slug });
     }
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Server error fetching policy' });
-  }
-});
-app.get('/api/policies/:slug', (req, res) => {
-  let slug = req.params.slug;
-  try {
-    const policies = JSON.parse(fs.readFileSync(path.join(__dirname, 'policies.json'), 'utf8'));
-    const policy = policies.find(p => p.slug === slug);
-    if (policy) {
-      res.json(policy);
-    } else {
-      res.status(404).json({ error: 'Policy not found' });
-    }
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'Server error fetching policy' });
+    res.status(500).json({ error: 'CUSTOM_500_ERROR', details: err.message });
   }
 });
 
