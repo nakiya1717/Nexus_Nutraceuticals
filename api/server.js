@@ -228,6 +228,51 @@ app.get('/api/orders/user/:userId', (req, res) => {
   }
 });
 
+// 5. Mock Policies Route
+app.get('/api/policies/:slug/', (req, res) => {
+  let slug = req.params.slug;
+  try {
+    const policies = JSON.parse(fs.readFileSync(path.join(__dirname, 'policies.json'), 'utf8'));
+    const policy = policies.find(p => p.slug === slug);
+    if (policy) {
+      res.json(policy);
+    } else {
+      res.status(404).json({ error: 'Policy not found' });
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error fetching policy' });
+  }
+});
+app.get('/api/policies/:slug', (req, res) => {
+  let slug = req.params.slug;
+  try {
+    const policies = JSON.parse(fs.readFileSync(path.join(__dirname, 'policies.json'), 'utf8'));
+    const policy = policies.find(p => p.slug === slug);
+    if (policy) {
+      res.json(policy);
+    } else {
+      res.status(404).json({ error: 'Policy not found' });
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error fetching policy' });
+  }
+});
+
+// 6. Mock Settings Route
+app.get('/api/website-settings/', (req, res) => {
+  res.json({
+        "store_name": "Nexus Nutraceuticals",
+        "tagline": "Better Health Starts Here",
+        "support_email": "support@nexusnutraceuticals.com",
+        "support_phone": "+91 99999 99999",
+        "shipping_fee": "0.00",
+        "free_shipping_threshold": "999.00",
+        "gst_rate": "18.00"
+  });
+});
+
 // Run local listener only when not running on Vercel
 if (!process.env.VERCEL) {
   app.listen(PORT, () => {
