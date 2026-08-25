@@ -3,10 +3,6 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "/api/server.js"
-    },
-    {
       "source": "/careers",
       "destination": "/careers.html"
     },
@@ -20,7 +16,7 @@
     }
   ],
   "functions": {
-    "api/server.js": {
+    "api/[...catchall].js": {
       "includeFiles": "api/*.json"
     }
   }
