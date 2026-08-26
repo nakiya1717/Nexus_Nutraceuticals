@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchWebsiteSettings() {
     try {
-      const response = await fetch(`${API_BASE_URL}website-settings/`);
+      const response = await fetch(`${API_BASE_URL}website-settings`);
       if (response.ok) {
         const data = await response.json();
         applyWebsiteSettings(data);
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchProductData() {
     try {
-      const response = await fetch(`${API_BASE_URL}products/vitamin-b12-d3-powder/`);
+      const response = await fetch(`${API_BASE_URL}products/vitamin-b12-d3-powder`);
       if (response.ok) {
         const data = await response.json();
         activeProductData = data;
@@ -760,7 +760,7 @@ Thank you.`;
       const message = document.getElementById('contact-comment').value;
 
       try {
-        const response = await fetch(`${API_BASE_URL}contact-enquiries/`, {
+        const response = await fetch(`${API_BASE_URL}contact-enquiries`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
