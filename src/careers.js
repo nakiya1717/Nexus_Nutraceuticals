@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function fetchJobs() {
     const container = document.getElementById('jobs-container');
     try {
-        const res = await fetch(`${API_BASE_URL}careers/jobs/`);
+        const res = await fetch(`${API_BASE_URL}careers/jobs`);
         if (!res.ok) throw new Error('Failed to fetch jobs');
         const jobs = await res.json();
         
@@ -91,7 +91,7 @@ async function loadJobDetails() {
     }
 
     try {
-        const res = await fetch(`${API_BASE_URL}careers/jobs/${slug}/`);
+        const res = await fetch(`${API_BASE_URL}careers/jobs/${slug}`);
         if (!res.ok) {
             if (res.status === 404) throw new Error('Job Not Found');
             throw new Error('Error loading job');
@@ -535,7 +535,7 @@ async function handleApplicationSubmit(e) {
     }
 
     try {
-        const res = await fetch(`${API_BASE_URL}careers/jobs/${slug}/apply/`, {
+        const res = await fetch(`${API_BASE_URL}careers/jobs/${slug}/apply`, {
             method: 'POST',
             body: formData 
         });

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api/';
 
     try {
-        const response = await fetch(`${API_BASE_URL}policies/${slug}/`);
+        const response = await fetch(`${API_BASE_URL}policies/${slug}`);
         if (!response.ok) throw new Error('Policy not found');
         const policyData = await response.json();
         
