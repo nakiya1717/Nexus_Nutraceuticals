@@ -245,6 +245,32 @@ app.get('/api/policies/:slug', (req, res) => {
   }
 });
 
+// 7. Mock Careers Route
+app.get('/api/careers/jobs', (req, res) => {
+  try {
+    const jobs = JSON.parse(fs.readFileSync(path.join(__dirname, 'careers.json'), 'utf8'));
+    res.json(jobs);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error fetching jobs', details: err.message });
+  }
+});
+
+app.get('/api/careers/jobs/:slug', (req, res) => {
+  try {
+    const jobs = JSON.parse(fs.readFileSync(path.join(__dirname, 'careers.json'), 'utf8'));
+    const job = jobs.find(j => j.slug === req.params.slug);
+    if (job) {
+      res.json(job);
+    } else {
+      res.status(404).json({ error: 'Job not found' });
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error fetching job', details: err.message });
+  }
+});
+
 // 6. Mock Settings Route
 app.get('/api/website-settings/', (req, res) => {
   res.json({
