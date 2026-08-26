@@ -6371,3 +6371,27 @@ body.no-scroll, html.no-scroll {
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
+
+
+/* Mobile Responsiveness for Nutrition Facts Table */
+@media (max-width: 575px) {
+  .nutrition-grid .commitment-card {
+    padding: 1.25rem !important;
+  }
+  
+  #dynamic-nutrition {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  #dynamic-nutrition table {
+    min-width: 0 !important;
+    width: 100% !important;
+    font-size: 0.85rem !important;
+  }
+  
+  #dynamic-nutrition th, 
+  #dynamic-nutrition td {
+    padding: 0.5rem 0.2rem !important;
+    word-break: break-word !important;
+  }
+}
