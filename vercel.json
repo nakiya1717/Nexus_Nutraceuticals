@@ -8,15 +8,15 @@
     },
     {
       "source": "/careers",
-      "destination": "/careers.html"
+      "destination": "/careers"
     },
     {
       "source": "/careers/",
-      "destination": "/careers.html"
+      "destination": "/careers"
     },
     {
       "source": "/careers/:slug",
-      "destination": "/career-details.html"
+      "destination": "/career-details"
     }
   ],
   "functions": {
